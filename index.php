@@ -79,7 +79,7 @@
 
 
     
-<!-- footer   -->
+<!-- 準備include footer   -->
   <footer class="bg-dark text-muted text-center py-3">
     <article class="bg-dark py-4 text-center">
 
