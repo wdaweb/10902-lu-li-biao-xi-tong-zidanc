@@ -6,74 +6,68 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="#" type="image/x-icon">
     <title>Zidan-Web Resume</title>
-    <link rel="stylesheet" href="./plugins/bootstrap.css" >
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./plugins/bootstrap.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <!-- fontAwesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <!-- customCSS -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/custom.css">
     
 </head>
 <body>
 <!-- 準備include header-->
-    <header class="bg-dark fixed-top">
+  <header class="bg-dark fixed-top">
     <nav class="navbar navbar-expand-md navbar-dark container">
       <a class="navbar-brand" href="index.php">ZidanResume</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#zinav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="zinav">
-        <ul class="navbar-nav ">
-          <li class="nav-item active">
-            <a class="nav-link" href="#lokiroom"><i class="fas fa-bed mr-2"></i>關於我</a>
+        <ul class="navbar-nav" style="width:100%;">
+          
+          <li class="myleft-5">
+            <ul class="myclear-le mycol-sm">
+              <li class="nav-item myli-sm myliclear-md dropright">
+                <a class="nav-link dropdown-toggle" href="#lokiroom" data-toggle="dropdown" role="button"><i class="fas fa-user mr-2"></i>關於我</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#" onclick="">個人資料</a>
+                    
+                      <a class="dropdown-item" href="#" onclick="">自我介紹</a>
+                    
+                      <a class="dropdown-item" href="#" onclick="">工作技能</a>
+                    </div>
+              </li>
+              <li class="nav-item myli-sm myliclear-md">
+                <a class="nav-link" href="#lokifacility"><i class="fas fa-people-arrows mr-2"></i>獵職條件</a>
+              </li>
+              <li class="nav-item myli-sm myliclear-md">
+                <a class="nav-link" href="#lokifood"><i class="fas fa-address-card mr-2"></i>履歷</a>
+              </li>
+              <li class="nav-item myli-sm myliclear-md">
+                <a class="nav-link" href="#lokifood"><i class="fas fa-address-book mr-2"></i>作品集</a>
+              </li>
+              <li class="nav-item myli-sm myliclear-md">
+                <a class="nav-link" href="#lokitrans"><i class="fas fa-images mr-2"></i>圖管理</a>
+              </li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#lokifacility"><i class="fas fa-coffee mr-2"></i>我的履歷</a>
+
+          <li class="myright-5">
+            <ul style="list-style: none;">
+              <li class="nav-item">
+                <a class="nav-link" href="#lokicontact"><i class="fas fa-sign-in-alt mr-2"></i>登入</a>
+              </li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#lokifood"><i class="fas fa-pizza-slice mr-2"></i>作品集</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#lokitrans"><i class="fas fa-map-marker-alt mr-2"></i></a>
-          </li>
-          <li class="nav-item myml-5">
-            <a class="nav-link" href="#lokicontact"><i class="fas fa-phone-square-alt mr-2"></i>登入</a>
-          </li>
+
         </ul>
       </div>
     </nav>
   </header>
 
-  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-    </ul>
-  </div>
-</nav> -->
+
 
 <!-- Main section -->
 
