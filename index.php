@@ -34,7 +34,7 @@
                     <div class="dropdown-menu">
                       <a class="dropdown-item" href="#" onclick="">個人資料</a>
                     
-                      <a class="dropdown-item" href="#" onclick="">自我介紹</a>
+                      <a class="dropdown-item" href="#" onclick="">自我簡介</a>
                     
                       <a class="dropdown-item" href="#" onclick="">工作技能</a>
                     </div>
@@ -71,10 +71,27 @@
 
 <!-- Main section -->
 
-    <section class="accordion">
+    <section class="">
         
     
 
     </section>
+
+
+    
+<!-- footer   -->
+  <footer class="bg-dark text-muted text-center py-3">
+    <article class="bg-dark py-4 text-center">
+
+
+    </article>
+    
+    <small>Personal Website - Online Resume System<br>
+      Copyright &copy; <a class="text-warning" href="#" target="_blank">Zidan Chien</a>. All Rights Reserved
+    </small>
+    
+    <a href="#lokislider" class="btn btn-info bobofixed"><i class="fas fa-arrow-up text-light"></i></a>
+  </footer>
+
 </body>
 </html>

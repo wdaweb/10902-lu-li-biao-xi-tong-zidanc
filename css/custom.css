@@ -42,3 +42,19 @@
     padding-right: 0px;
   }
 }
+
+footer{
+  width: 100vw;
+  position: absolute;
+  bottom: 0vh;
+}
+
+.bobofixed {
+  position: fixed;
+  border: 3px solid rgb(0, 255, 230);
+  border-radius: 0.5rem;
+  bottom: 5vh;
+  right: 5vh;
+  z-index: 999;
+  animation: bobojump 2s ease infinite;
+}
