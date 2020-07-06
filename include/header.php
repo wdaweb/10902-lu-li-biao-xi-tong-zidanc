@@ -37,7 +37,15 @@
         <li class="myright-5">
           <ul style="list-style: none;">
             <li class="nav-item">
-              <a class="nav-link" href="../index.php"><i class="fas fa-sign-out-alt mr-2"></i>登出</a>
+              
+                <?php
+                  if(empty($_SESSION)){
+                      echo "<a class='nav-link' href='./index.php'><i class='fas fa-sign-in-alt mr-2'></i>登入</a>";
+                  }else{
+                      echo "<a class='nav-link' href='           '><i class='fas fa-sign-out-alt mr-2'></i>登出</a>";
+                  }
+                ?>
+              
             </li>
           </ul>
         </li>

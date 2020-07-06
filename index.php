@@ -57,7 +57,7 @@
           <li class="myright-5">
             <ul style="list-style: none;">
               <li class="nav-item">
-                <a class="nav-link" href="./backend/index.php"><i class="fas fa-sign-in-alt mr-2"></i>登入</a>
+                <a class="nav-link" href="./login.php"><i class="fas fa-sign-in-alt mr-2"></i>登入</a>
               </li>
             </ul>
           </li>
@@ -71,11 +71,39 @@
 
 <!-- Main section -->
 
-    <section class="">
-        
-    
+    <section class="container w-100 pt-5">
+        <artical class="row justify-content-between">
 
+          <div class="card border-secondary mb-3 mt-5 col-12 col-md-3">   <!-- style="max-width: XXrem"; -->
+              <div class="card-header">個人資料</div>
+                <div class="card-body text-secondary">
+                    <h5 class="card-title">first card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+          </div>
+
+          <div class="card border-secondary mb-3 mt-5 col-12 col-md-8">
+              <div class="card-header">基本簡介</div>
+                <div class="card-body text-secondary">
+                    <h5 class="card-title">secondary card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+          </div>
+        </artical>
     </section>
+    
+    <section class="container w-100">
+        <artical class="row justify-content-between">
+          <div class="card border-secondary mb-3 mt-3 col-12 col-md-12">   <!-- style="max-width: XXrem"; -->
+              <div class="card-header">工作技能</div>
+                <div class="card-body text-secondary">
+                    <h5 class="card-title">third card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+          </div>
+        </artical>
+    </section>
+
 
 
     

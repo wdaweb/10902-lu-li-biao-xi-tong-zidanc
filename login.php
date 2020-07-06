@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="#" type="image/x-icon">
     <title>履歷表管理後台</title>
-    <link rel="stylesheet" href="../plugins/bootstrap.css">
+    <link rel="stylesheet" href="./plugins/bootstrap.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
@@ -23,12 +23,12 @@
 </head>
 <body class="bg-light">
 <?php
-    include_once "../include/headerback.html";
+    include_once "./include/header.php";
 ?>
 
 <section class="w-100 d-flex flex-column align-items-center justify-content-center" style="height:90vh;">
     <div>
-        <p>履歷表管理後台，請在下方登入或註冊！</p>
+        <p>履歷表管理後台，請在下方登入。</p>
     </div>
 
 
@@ -55,12 +55,6 @@
 </form>
 </section>
 
-
-<script>
-$(function(){
-$('.toast').toast('show')
-})
-</script>
 
 </body>
 </html>
