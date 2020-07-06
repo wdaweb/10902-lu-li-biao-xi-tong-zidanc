@@ -13,7 +13,7 @@
     <!-- fontAwesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <!-- customCSS -->
-    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="./css/custom.css">
     
     <style>
     .card {

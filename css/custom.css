@@ -66,3 +66,18 @@ footer{
   outline: 0px;
   box-shadow: 0 0 0.2rem 0.2rem rgba(0, 255, 230, 0.3);
 }
+
+.pinefixed {
+  position: fixed;
+  bottom: 0;
+  left: 1vh;
+  z-index: 999;
+}
+@media (max-width: 650px){
+  .pine-xs {
+    transform: scale(0.58);
+    position: fixed;
+    bottom: -3.4vh;
+    left: -3.6vh;
+  }
+}

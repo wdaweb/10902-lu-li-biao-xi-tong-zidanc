@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <!-- customCSS -->
     <link rel="stylesheet" href="./css/custom.css">
+    <!-- JQ -->
+    <script src="./plugins/jquery-3.5.1.min.js"></script>
     
 </head>
 <body>
@@ -77,8 +79,9 @@
           <div class="card border-secondary mb-3 mt-5 col-12 col-md-3">   <!-- style="max-width: XXrem"; -->
               <div class="card-header">個人資料</div>
                 <div class="card-body text-secondary">
-                    <h5 class="card-title">first card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <span class=""><img src="./img/personal.jpg" draggable="false" ondragstart="return false;"></span>
+                    <h5 class="card-title">簡志瀚</h5>
+                    <p class="card-text">Taipei City, Taiwan</p>
                 </div>
           </div>
 
@@ -86,7 +89,7 @@
               <div class="card-header">基本簡介</div>
                 <div class="card-body text-secondary">
                     <h5 class="card-title">secondary card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">有5年工業設計師及1.5年專案管理能力，能與客戶直接溝通並提供網頁、工業、商業、平面設計的整合服務，並且具有手繪能力，達到客戶所需質感。</p>
                 </div>
           </div>
         </artical>
@@ -98,7 +101,7 @@
               <div class="card-header">工作技能</div>
                 <div class="card-body text-secondary">
                     <h5 class="card-title">third card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">繪製2D／3D模具設計圖、產品外型設計、使用者介面設計、意外事故防範與急救、產品包裝設計、設計印刷基本認知、各式封面設計、色彩應用繪製、素材辨識與處理、視覺設計相關知識、電腦排版設計、電腦繪圖軟體操作、繪圖工具與軟體操作、電腦動畫設計、行程規劃業務、產品介紹及解說銷售、專案溝通╱整合管理、文書處理軟體操作、種植栽培能力</p>
                 </div>
           </div>
         </artical>
@@ -117,9 +120,15 @@
     <small>Personal Website - Online Resume System<br>
       Copyright &copy; <a class="text-warning" href="#" target="_blank">Zidan Chien</a>. All Rights Reserved
     </small>
-    
+    <span class="pinefixed pine-xs"><img src="./include/pine_sm.png" draggable="false" ondragstart="return false;"></span>
     <a href="#lokislider" class="btn btn-info bobofixed"><i class="fas fa-arrow-up text-light"></i></a>
   </footer>
+
+<script>
+  document.getElementsByTagName('img').ondragstart = function() {
+     return false;
+    };
+</script>
 
 </body>
 </html>
