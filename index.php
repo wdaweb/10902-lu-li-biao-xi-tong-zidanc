@@ -20,7 +20,7 @@
 <!-- 準備include header-->
   <header class="bg-dark fixed-top">
     <nav class="navbar navbar-expand-md navbar-dark container">
-      <a class="navbar-brand" href="index.php">ZidanResume</a>
+      <a class="navbar-brand" href="./index.php">ZidanResume</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#zinav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -57,7 +57,7 @@
           <li class="myright-5">
             <ul style="list-style: none;">
               <li class="nav-item">
-                <a class="nav-link" href="#lokicontact"><i class="fas fa-sign-in-alt mr-2"></i>登入</a>
+                <a class="nav-link" href="./backend/index.php"><i class="fas fa-sign-in-alt mr-2"></i>登入</a>
               </li>
             </ul>
           </li>

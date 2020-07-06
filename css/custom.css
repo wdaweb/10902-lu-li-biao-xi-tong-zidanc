@@ -58,3 +58,11 @@ footer{
   z-index: 999;
   animation: bobojump 2s ease infinite;
 }
+
+.myform-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: rgb(0, 255, 230);
+  outline: 0px;
+  box-shadow: 0 0 0.2rem 0.2rem rgba(0, 255, 230, 0.3);
+}

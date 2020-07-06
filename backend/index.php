@@ -15,13 +15,53 @@
     <!-- customCSS -->
     <link rel="stylesheet" href="../css/custom.css">
     
+    <style>
+    .card {
+        width: 25rem;
+    }
+    </style>
 </head>
-<body>
+<body class="bg-light">
 <?php
-    include_once "../include/header.html";
+    include_once "../include/headerback.html";
 ?>
 
+<section class="w-100 d-flex flex-column align-items-center justify-content-center" style="height:90vh;">
+    <div>
+        <p>履歷表管理後台，請在下方登入或註冊！</p>
+    </div>
 
+
+<!-- 登入區域 -->
+<form action="./api/login.php" method="post" class="form-group">
+    <div class="container d-flex align-items-center">
+        
+        <div class="col-12 card">
+            <div class="card-body text-center">
+                <br>
+                    <p>帳號：<input type="text" name="acct" id="acct" class="myform-control"></p>
+                    <p>密碼：<input type="password" name="psw" id="psw" class="myform-control"></p>
+                    <input type="submit" value="登入" class="btn btn-outline-secondary">
+                    <input type="reset" value="重置" class="btn btn-outline-secondary">
+                <br><br>
+                <a href="reg.html">註冊</a>
+                <!-- 忘記密碼功能時間夠要加上去 <a href="#">忘記密碼</a> -->
+            </div>
+        </div>
+        
+            
+        
+    </div>
+</form>
+</section>
+
+
+<script>
+$(function(){
+$('.toast').toast('show')
+})
+</script>
 
 </body>
 </html>
+
