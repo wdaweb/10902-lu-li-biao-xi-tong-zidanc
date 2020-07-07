@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="#" type="image/x-icon">
-    <title>履歷表管理後台</title>
+    <title>Zidan-Web Resume</title>
     <link rel="stylesheet" href="./plugins/bootstrap.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <!-- customCSS -->
     <link rel="stylesheet" href="./css/custom.css">
-    
+    <!-- JQ -->
+    <script src="./plugins/jquery-3.5.1.min.js"></script>
     <style>
     .card {
         width: 25rem;
@@ -33,7 +34,7 @@
 
 
 <!-- 登入區域 -->
-<form action="./api/login.php" method="post" class="form-group">
+<form action="./api/chklogin.php" method="post" class="form-group">
     <div class="container d-flex align-items-center">
         
         <div class="col-12 card">

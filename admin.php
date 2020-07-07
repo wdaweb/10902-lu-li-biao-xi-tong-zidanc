@@ -232,18 +232,7 @@
 
     
 <!-- 準備include footer   -->
-  <footer class="bg-dark text-muted text-center py-3 position-relative">
-    <article class="bg-dark py-4 text-center">
 
-
-    </article>
-    
-    <small>Personal Website - Online Resume System<br>
-      Copyright &copy; <a class="text-warning" href="#" target="_blank">Zidan Chien</a>. All Rights Reserved
-    </small>
-    <span class="pinefixed pine-xs"><img src="./img/pine_sm.png" draggable="false" ondragstart="return false;"></span>
-    <a href="#lokislider" class="btn btn-info bobofixed"><i class="fas fa-arrow-up text-light"></i></a>
-  </footer>
 
 <script>
   document.getElementsByTagName('img').ondragstart = function() {
