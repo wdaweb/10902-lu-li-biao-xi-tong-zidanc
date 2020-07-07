@@ -53,7 +53,7 @@
                 <a class="nav-link" href="#lokifood"><i class="fas fa-address-card mr-2"></i>履歷</a>
               </li>
               <li class="nav-item myli-sm myliclear-md">
-                <a class="nav-link" href="#lokifood"><i class="fas fa-address-book mr-2"></i>作品集</a>
+                <a class="nav-link" href="#zidanportfolio"><i class="fas fa-address-book mr-2"></i>作品集</a>
               </li>
               <li class="nav-item myli-sm myliclear-md">
                 <a class="nav-link" href="#lokitrans"><i class="fas fa-images mr-2"></i>圖管理</a>
@@ -84,7 +84,7 @@
           <div class="card border-secondary mb-3 mt-5 col-12 col-md-3">   <!-- style="max-width: XXrem"; -->
               <div class="card-header">個人資料</div>
                 <div class="card-body text-secondary">
-                  <span class=""><img src="./img/personal.jpg" draggable="false" ondragstart="return false;"></span>
+                  <span class=""><img src="./img/personal.jpg" draggable="false" ondragstart="return false"; class="rounded-circle"></span>
                     <h5 class="card-title">簡志瀚</h5>
                     <p class="card-text">Taipei City, Taiwan</p>
                 </div>
@@ -93,8 +93,13 @@
           <div class="card border-secondary mb-3 mt-5 col-12 col-md-8">
               <div class="card-header">基本簡介</div>
                 <div class="card-body text-secondary">
-                    <h5 class="card-title">secondary card title</h5>
-                    <p class="card-text">有5年工業設計師及1.5年專案管理能力，能與客戶直接溝通並提供網頁、工業、商業、平面設計的整合服務，並且具有手繪能力，達到客戶所需質感。</p>
+                    <h5 class="card-title">網頁設計是現在的趨勢，我學習專業網頁設計相關技術</h5>
+                    <p class="card-text">並有5年工業設計師及1.5年專案管理能力，能與客戶直接溝通並提供網頁、工業、商業、平面設計的整合服務，並且具有手繪能力，達到客戶所需質感。</p>
+                </div>
+                <div class="card-body">
+                  <a class="pr-2" href="" style="font-size:2rem; color:rgb(0,255,230);"><i class="fab fa-github"></i></a>
+                  <a class="pr-2" href="" style="font-size:2rem; color:rgb(0,255,230);"><i class="fas fa-at"></i></a>
+                  <a class="pr-2" href="" style="font-size:2rem; color:rgb(0,255,230);"><i class="fab fa-codepen"></i></a>
                 </div>
           </div>
         </artical>
@@ -104,23 +109,33 @@
     <section class="container w-100">
         <artical class="row justify-content-between">
           <div class="card border-secondary mb-3 mt-3 col-12 col-md-12">   <!-- style="max-width: XXrem"; -->
-              <div class="card-header myhighlight text-white font-weight-bold bd-radius-clear">獵職條件</div>
-                <aside class="d-flex justify-content-between flex-wrap">
-                	<div class="card-body text-secondary col-12 col-md-3">
-                	    <h5 class="card-title">Industrial Design</h5>
-                	    <p class="card-text">繪製2D／3D模具設計圖、產品外型設計、使用者介面設計、意外事故防範與急救、產品包裝設計、設計印刷基本認知、各式封面設計、色彩應用繪製、素材辨識與處理、視覺設計相關知識、電腦排版設計、電腦繪圖軟體操作、繪圖工具與軟體操作、電腦動畫設計、行程規劃業務、產品介紹及解說銷售、專案溝通╱整合管理、文書處理軟體操作、種植栽培能力</p>
-                	</div>
-                  <div class="vline"></div>
-                	<div class="card-body text-secondary col-12 col-md-3">
-                	    <h5 class="card-title">Visual Design/ UI UX</h5>
-                	    <p class="card-text">繪製2D／3D模具設計圖、產品外型設計、使用者介面設計、意外事故防範與急救、產品包裝設計、設計印刷基本認知、各式封面設計、色彩應用繪製、素材辨識與處理、視覺設計相關知識、電腦排版設計、電腦繪圖軟體操作、繪圖工具與軟體操作、電腦動畫設計、行程規劃業務、產品介紹及解說銷售、專案溝通╱整合管理、文書處理軟體操作、種植栽培能力</p>
-                	</div>
-                  <div class="vline"></div>
-                	<div class="card-body text-secondary col-12 col-md-3">
-                	    <h5 class="card-title">Web Design</h5>
-                	    <p class="card-text">繪製2D／3D模具設計圖、產品外型設計、使用者介面設計、意外事故防範與急救、產品包裝設計、設計印刷基本認知、各式封面設計、色彩應用繪製、素材辨識與處理、視覺設計相關知識、電腦排版設計、電腦繪圖軟體操作、繪圖工具與軟體操作、電腦動畫設計、行程規劃業務、產品介紹及解說銷售、專案溝通╱整合管理、文書處理軟體操作、種植栽培能力</p>
-                	</div>
-                </aside>
+              <div class="card-header myhighlight text-white font-weight-bold bd-radius-clear mb-4">獵職條件</div>
+                <table class="mb-3">
+                  <tr>
+                    <td class="text-muted py-1 mypl-20px">希望性質</td>
+                    <td class="text-muted py-1">全職 / 對遠端工作有興趣 / 網頁前端工程師 / UI/UX設計師</td>
+                  </tr>
+                  <tr>
+                    <td class="text-muted py-1 mypl-20px">上班時段</td>
+                    <td class="text-muted py-1">日班</td>
+                  </tr>
+                  <tr>
+                    <td class="text-muted py-1 mypl-20px">可上班日</td>
+                    <td class="text-muted py-1">錄取後一週可上班</td>
+                  </tr>
+                  <tr>
+                    <td class="text-muted py-1 mypl-20px">希望地點</td>
+                    <td class="text-muted py-1">台北市、新北市、桃園市蘆竹區中壢區</td>
+                  </tr>
+                  <tr>
+                    <td class="text-muted py-1 mypl-20px">希望職稱</td>
+                    <td class="text-muted py-1">網頁前端工程師、UI/UX設計師</td>
+                  </tr>
+                  <tr>
+                    <td class="text-muted py-1 mypl-20px">希望待遇</td>
+                    <td class="text-muted py-1">面議</td>
+                  </tr>
+                </table>
           </div>
         </artical>
     </section>
@@ -133,17 +148,20 @@
                 <aside class="d-flex justify-content-between flex-wrap">
                 	<div class="card-body text-secondary col-12 col-md-3">
                 	    <h5 class="card-title">Industrial Design</h5>
-                	    <p class="card-text">繪製2D／3D模具設計圖、產品外型設計、使用者介面設計、意外事故防範與急救、產品包裝設計、設計印刷基本認知、各式封面設計、色彩應用繪製、素材辨識與處理、視覺設計相關知識、電腦排版設計、電腦繪圖軟體操作、繪圖工具與軟體操作、電腦動畫設計、行程規劃業務、產品介紹及解說銷售、專案溝通╱整合管理、文書處理軟體操作、種植栽培能力</p>
+                	    <p class="card-text">繪製2D／3D模具設計圖、產品外型設計、曲面、實體3D軟體操作、繪圖工具與軟體操作、電腦基礎動畫設計、專案溝通╱整合管理</p>
                 	</div>
                   <div class="vline"></div>
                 	<div class="card-body text-secondary col-12 col-md-3">
                 	    <h5 class="card-title">Visual Design/ UI UX</h5>
-                	    <p class="card-text">繪製2D／3D模具設計圖、產品外型設計、使用者介面設計、意外事故防範與急救、產品包裝設計、設計印刷基本認知、各式封面設計、色彩應用繪製、素材辨識與處理、視覺設計相關知識、電腦排版設計、電腦繪圖軟體操作、繪圖工具與軟體操作、電腦動畫設計、行程規劃業務、產品介紹及解說銷售、專案溝通╱整合管理、文書處理軟體操作、種植栽培能力</p>
+                	    <p class="card-text">使用者介面設計、產品包裝設計、設計印刷基本認知、各式封面設計、色彩應用繪製、素材辨識與處理、視覺設計相關知識、電腦排版設計、電腦繪圖軟體操作、產品介紹及解說銷售</p>
                 	</div>
                   <div class="vline"></div>
                 	<div class="card-body text-secondary col-12 col-md-3">
                 	    <h5 class="card-title">Web Design</h5>
-                	    <p class="card-text">繪製2D／3D模具設計圖、產品外型設計、使用者介面設計、意外事故防範與急救、產品包裝設計、設計印刷基本認知、各式封面設計、色彩應用繪製、素材辨識與處理、視覺設計相關知識、電腦排版設計、電腦繪圖軟體操作、繪圖工具與軟體操作、電腦動畫設計、行程規劃業務、產品介紹及解說銷售、專案溝通╱整合管理、文書處理軟體操作、種植栽培能力</p>
+                	    <p class="card-text mb-1">HTML, CSS, Javascript, JQuery</p>
+                      <p class="card-text mb-1">RWD, Bootstrap,</p>
+                      <p class="card-text mb-1">PHP, MySQL,</p>
+                      <p class="card-text mb-1">Git - File Version Management</p>
                 	</div>
                 </aside>
           </div>
@@ -189,7 +207,7 @@
     </section>
 
 
-    <section class="container w-100">
+    <section class="container w-100" id="zidanportfolio">
         <artical class="row justify-content-between">
           <div class="card border-secondary mb-3 mt-3 col-12 col-md-12">   <!-- style="object-fit:cover"; 圖片等比例充滿版面-->
               <div class="card-header myhighlight text-white font-weight-bold bd-radius-clear">作品集</div>
@@ -226,6 +244,10 @@
                 </div>
           </div>
         </artical>
+        <!-- background-blend-mode: color-burn;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed; -->
     </section>
 
 
