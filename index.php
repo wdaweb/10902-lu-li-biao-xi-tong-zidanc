@@ -39,6 +39,11 @@
                       <a class="dropdown-item" href="#" onclick="">自我簡介</a>
                     
                       <a class="dropdown-item" href="#" onclick="">工作技能</a>
+
+                      <a class="dropdown-item" href="#" onclick="">工作經歷</a>
+
+                      <a class="dropdown-item" href="#" onclick="">學歷資料</a>
+                      
                     </div>
               </li>
               <li class="nav-item myli-sm myliclear-md">
@@ -95,13 +100,129 @@
         </artical>
     </section>
     
+
+    <section class="container w-100">
+        <artical class="row justify-content-between">
+          <div class="card border-secondary mb-3 mt-3 col-12 col-md-12">   <!-- style="max-width: XXrem"; -->
+              <div class="card-header myhighlight text-white font-weight-bold bd-radius-clear">獵職條件</div>
+                <aside class="d-flex justify-content-between flex-wrap">
+                	<div class="card-body text-secondary col-12 col-md-3">
+                	    <h5 class="card-title">Industrial Design</h5>
+                	    <p class="card-text">繪製2D／3D模具設計圖、產品外型設計、使用者介面設計、意外事故防範與急救、產品包裝設計、設計印刷基本認知、各式封面設計、色彩應用繪製、素材辨識與處理、視覺設計相關知識、電腦排版設計、電腦繪圖軟體操作、繪圖工具與軟體操作、電腦動畫設計、行程規劃業務、產品介紹及解說銷售、專案溝通╱整合管理、文書處理軟體操作、種植栽培能力</p>
+                	</div>
+                  <div class="vline"></div>
+                	<div class="card-body text-secondary col-12 col-md-3">
+                	    <h5 class="card-title">Visual Design/ UI UX</h5>
+                	    <p class="card-text">繪製2D／3D模具設計圖、產品外型設計、使用者介面設計、意外事故防範與急救、產品包裝設計、設計印刷基本認知、各式封面設計、色彩應用繪製、素材辨識與處理、視覺設計相關知識、電腦排版設計、電腦繪圖軟體操作、繪圖工具與軟體操作、電腦動畫設計、行程規劃業務、產品介紹及解說銷售、專案溝通╱整合管理、文書處理軟體操作、種植栽培能力</p>
+                	</div>
+                  <div class="vline"></div>
+                	<div class="card-body text-secondary col-12 col-md-3">
+                	    <h5 class="card-title">Web Design</h5>
+                	    <p class="card-text">繪製2D／3D模具設計圖、產品外型設計、使用者介面設計、意外事故防範與急救、產品包裝設計、設計印刷基本認知、各式封面設計、色彩應用繪製、素材辨識與處理、視覺設計相關知識、電腦排版設計、電腦繪圖軟體操作、繪圖工具與軟體操作、電腦動畫設計、行程規劃業務、產品介紹及解說銷售、專案溝通╱整合管理、文書處理軟體操作、種植栽培能力</p>
+                	</div>
+                </aside>
+          </div>
+        </artical>
+    </section>
+
+
     <section class="container w-100">
         <artical class="row justify-content-between">
           <div class="card border-secondary mb-3 mt-3 col-12 col-md-12">   <!-- style="max-width: XXrem"; -->
               <div class="card-header">工作技能</div>
+                <aside class="d-flex justify-content-between flex-wrap">
+                	<div class="card-body text-secondary col-12 col-md-3">
+                	    <h5 class="card-title">Industrial Design</h5>
+                	    <p class="card-text">繪製2D／3D模具設計圖、產品外型設計、使用者介面設計、意外事故防範與急救、產品包裝設計、設計印刷基本認知、各式封面設計、色彩應用繪製、素材辨識與處理、視覺設計相關知識、電腦排版設計、電腦繪圖軟體操作、繪圖工具與軟體操作、電腦動畫設計、行程規劃業務、產品介紹及解說銷售、專案溝通╱整合管理、文書處理軟體操作、種植栽培能力</p>
+                	</div>
+                  <div class="vline"></div>
+                	<div class="card-body text-secondary col-12 col-md-3">
+                	    <h5 class="card-title">Visual Design/ UI UX</h5>
+                	    <p class="card-text">繪製2D／3D模具設計圖、產品外型設計、使用者介面設計、意外事故防範與急救、產品包裝設計、設計印刷基本認知、各式封面設計、色彩應用繪製、素材辨識與處理、視覺設計相關知識、電腦排版設計、電腦繪圖軟體操作、繪圖工具與軟體操作、電腦動畫設計、行程規劃業務、產品介紹及解說銷售、專案溝通╱整合管理、文書處理軟體操作、種植栽培能力</p>
+                	</div>
+                  <div class="vline"></div>
+                	<div class="card-body text-secondary col-12 col-md-3">
+                	    <h5 class="card-title">Web Design</h5>
+                	    <p class="card-text">繪製2D／3D模具設計圖、產品外型設計、使用者介面設計、意外事故防範與急救、產品包裝設計、設計印刷基本認知、各式封面設計、色彩應用繪製、素材辨識與處理、視覺設計相關知識、電腦排版設計、電腦繪圖軟體操作、繪圖工具與軟體操作、電腦動畫設計、行程規劃業務、產品介紹及解說銷售、專案溝通╱整合管理、文書處理軟體操作、種植栽培能力</p>
+                	</div>
+                </aside>
+          </div>
+        </artical>
+    </section>
+    
+    <section class="container w-100">
+        <artical class="row justify-content-between">
+          <div class="card border-secondary mb-3 mt-3 col-12 col-md-12">   <!-- style="max-width: XXrem"; -->
+              <div class="card-header">工作經歷 <small>＆</small> 相關活動</div>
                 <div class="card-body text-secondary">
-                    <h5 class="card-title">third card title</h5>
-                    <p class="card-text">繪製2D／3D模具設計圖、產品外型設計、使用者介面設計、意外事故防範與急救、產品包裝設計、設計印刷基本認知、各式封面設計、色彩應用繪製、素材辨識與處理、視覺設計相關知識、電腦排版設計、電腦繪圖軟體操作、繪圖工具與軟體操作、電腦動畫設計、行程規劃業務、產品介紹及解說銷售、專案溝通╱整合管理、文書處理軟體操作、種植栽培能力</p>
+                    <div class="d-flex justify-content-between flex-wrap mb-2">
+                    	<span class="font-weight-bold mytitle">(接案)工業設計</span><span class="text-right mt-2">2019/9~2019/11</span>
+                    </div>
+                    <p class="card-text">與上市公司雷虎集團合作，參與電競PUBG(絕地求生)遙控模型車製作。期間參與車體外觀3D塑膠配件的機構設計與建模、資料蒐集分析、三視圖繪製、俄羅斯軍卡3D車殼造型正向建模，並密集與該專案窗口做可行性討論、模型修改、提供基本排模圖等設計諮詢。</p>
+                </div>
+                <div class="card-body text-secondary">
+                    <div class="d-flex justify-content-between flex-wrap mb-2">
+                    	<span class="font-weight-bold mytitle">工業設計師</span><span class="text-right mt-2">2016/12~2019/9</span>
+                    </div>
+                    <p class="card-text">視覺規劃、圖像化組裝說明書，並提供基礎CMF、噴漆、包裝設計。研調競爭者的定位，做出市場區隔並提供未來趨勢的電繪造型提案，或者根據客戶明確指出的風格趨向作提案設計。正向A級曲面建模、3D逆向工程建模。兼顧車殼及塑膠配件的尺寸搭配，建構車殼模具。並與廠商密切配合後續打樣、問題解決。兼顧製造生產與玩家對產品外觀、造形、色彩、結構、功能及安全性等方面要求條件下，從事大量生產產品之設計及開發。</p>
+                </div>
+                <div class="card-body text-secondary">
+                    <div class="d-flex justify-content-between flex-wrap mb-2">
+                    	<span class="font-weight-bold mytitle">專案管理</span><span class="text-right mt-2">2015/8~2016/11</span>
+                    </div>
+                    <p class="card-text">研究客戶開發方向。整合開發文件、電子規格等。執行新產品開發專案之規劃、執行、設計及發展進度掌控、成本控制及結案程序。協助各部門及廠處推動專案。協調新產品導入量產與上市。進行客戶溝通及訴願處理。</p>
+                </div>
+                <div class="card-body text-secondary">
+                    <div class="d-flex justify-content-between flex-wrap mb-2">
+                    	<span class="font-weight-bold mytitle">立體造型工業設計師</span><span class="text-right mt-2">2013/8~2015/8</span>
+                    </div>
+                    <p class="card-text">研調競爭對手的定位，做出市場區隔的電繪造型提案，或者根據客戶明確指出的風格趨向作提案設計。正向A級曲面建模、3D逆向工程建模。兼顧車殼及塑膠配件的尺寸搭配，建構車殼模具。並與廠商密切配合後續打樣、問題解決。兼顧製造生產與玩家對產品外觀、造形、色彩、結構、功能及安全性等方面要求條件下，從事大量生產產品之設計及開發。</p>
+                </div>
+                <div class="card-body text-secondary">
+                    <div class="d-flex justify-content-between flex-wrap mb-2">
+                    	<span class="font-weight-bold mytitle">視覺傳達設計師</span><span class="text-right mt-2">2012/6~2013/8</span>
+                    </div>
+                    <p class="card-text">從事專業遙控模型車的產品視覺包裝、各式車殼貼紙、內襯結構設計、圖像化組裝說明書等設計工作，以強化商品的視覺形象。</p>
+                </div>
+          </div>
+        </artical>
+    </section>
+
+
+    <section class="container w-100">
+        <artical class="row justify-content-between">
+          <div class="card border-secondary mb-3 mt-3 col-12 col-md-12">   <!-- style="object-fit:cover"; 圖片等比例充滿版面-->
+              <div class="card-header myhighlight text-white font-weight-bold bd-radius-clear">作品集</div>
+                <div class="card-body text-secondary">
+                    <div class="d-flex justify-content-between flex-wrap mb-2">
+                    	<span>WEB PHP</span>
+                    </div>
+                    <p class="card-text">AAA</p>
+                    <img src="./img/kyosho_scorpion.jpg" draggable="false" ondragstart="return false;">
+                </div>
+                <div class="card-body text-secondary">
+                    <div class="d-flex justify-content-between flex-wrap mb-2">
+                    	<span class="font-weight-bold mytitle">工業設計師</span><span class="text-right mt-2">2016/12~2019/9</span>
+                    </div>
+                    <p class="card-text">視覺規劃、圖像化組裝說明書，並提供基礎CMF、噴漆、包裝設計。研調競爭者的定位，做出市場區隔並提供未來趨勢的電繪造型提案，或者根據客戶明確指出的風格趨向作提案設計。正向A級曲面建模、3D逆向工程建模。兼顧車殼及塑膠配件的尺寸搭配，建構車殼模具。並與廠商密切配合後續打樣、問題解決。兼顧製造生產與玩家對產品外觀、造形、色彩、結構、功能及安全性等方面要求條件下，從事大量生產產品之設計及開發。</p>
+                </div>
+                <div class="card-body text-secondary">
+                    <div class="d-flex justify-content-between flex-wrap mb-2">
+                    	<span class="font-weight-bold mytitle">專案管理</span><span class="text-right mt-2">2015/8~2016/11</span>
+                    </div>
+                    <p class="card-text">研究客戶開發方向。整合開發文件、電子規格等。執行新產品開發專案之規劃、執行、設計及發展進度掌控、成本控制及結案程序。協助各部門及廠處推動專案。協調新產品導入量產與上市。進行客戶溝通及訴願處理。</p>
+                </div>
+                <div class="card-body text-secondary">
+                    <div class="d-flex justify-content-between flex-wrap mb-2">
+                    	<span class="font-weight-bold mytitle">立體造型工業設計師</span><span class="text-right mt-2">2013/8~2015/8</span>
+                    </div>
+                    <p class="card-text">研調競爭對手的定位，做出市場區隔的電繪造型提案，或者根據客戶明確指出的風格趨向作提案設計。正向A級曲面建模、3D逆向工程建模。兼顧車殼及塑膠配件的尺寸搭配，建構車殼模具。並與廠商密切配合後續打樣、問題解決。兼顧製造生產與玩家對產品外觀、造形、色彩、結構、功能及安全性等方面要求條件下，從事大量生產產品之設計及開發。</p>
+                </div>
+                <div class="card-body text-secondary">
+                    <div class="d-flex justify-content-between flex-wrap mb-2">
+                    	<span class="font-weight-bold mytitle">視覺傳達設計師</span><span class="text-right mt-2">2012/6~2013/8</span>
+                    </div>
+                    <p class="card-text">從事專業遙控模型車的產品視覺包裝、各式車殼貼紙、內襯結構設計、圖像化組裝說明書等設計工作，以強化商品的視覺形象。</p>
                 </div>
           </div>
         </artical>
@@ -111,7 +232,7 @@
 
     
 <!-- 準備include footer   -->
-  <footer class="bg-dark text-muted text-center py-3">
+  <footer class="bg-dark text-muted text-center py-3 position-relative">
     <article class="bg-dark py-4 text-center">
 
 

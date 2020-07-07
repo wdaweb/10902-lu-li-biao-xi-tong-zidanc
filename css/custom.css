@@ -45,7 +45,7 @@
 
 footer{
   width: 100vw;
-  position: absolute;
+  /* position: absolute; */
   bottom: 0vh;
 }
 
@@ -68,7 +68,7 @@ footer{
 }
 
 .pinefixed {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 1vh;
   z-index: 999;
@@ -76,8 +76,28 @@ footer{
 @media (max-width: 650px){
   .pine-xs {
     transform: scale(0.58);
-    position: fixed;
+    position: absolute;
     bottom: -3.4vh;
     left: -3.6vh;
   }
 }
+
+.mytitle{
+  font-size: 1.3rem;
+}
+
+.vline{
+  width: 0.05rem;
+  background: linear-gradient(to bottom, transparent 15%, #000000 20%, #000000 90%, transparent 95%);
+}
+
+.myhighlight{
+  background: linear-gradient(60deg,#26c6da,#0097a7);
+  box-shadow: 0 5px 20px 0 rgba(0,0,0,.2), 0 13px 24px -11px rgba(0,188,212,.6);
+}
+
+.bd-radius-clear{
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
