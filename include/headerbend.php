@@ -1,5 +1,5 @@
 
-  <header class="bg-info fixed-top">
+  <header class="bg-dark fixed-top">
     <nav class="navbar navbar-expand-md navbar-dark container">
       <a class="navbar-brand" href="./index.php">ZidanResume</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#zinav">

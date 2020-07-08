@@ -24,7 +24,7 @@
 </head>
 <body class="bg-light">
 <?php
-    include_once "./include/header.php";
+    include_once "./include/headerbend.php";
 ?>
 
 <section class="w-100 d-flex flex-column align-items-center justify-content-center" style="height:90vh;">
@@ -40,8 +40,8 @@
         <div class="col-12 card">
             <div class="card-body text-center">
                 <br>
-                    <p>帳號：<input type="text" name="acct" id="acct" class="myform-control"></p>
-                    <p>密碼：<input type="password" name="psw" id="psw" class="myform-control"></p>
+                    <p>帳號：<input type="text" name="acc" id="acc" class="myform-control"></p>
+                    <p>密碼：<input type="password" name="pw" id="pw" class="myform-control"></p>
                     <input type="submit" value="登入" class="btn btn-outline-secondary">
                     <input type="reset" value="重置" class="btn btn-outline-secondary">
                 <br><br>
