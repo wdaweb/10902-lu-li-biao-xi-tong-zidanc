@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1
--- 產生時間： 2020-07-08 23:16:14
+-- 產生時間： 2020-07-09 00:55:30
 -- 伺服器版本： 10.4.11-MariaDB
 -- PHP 版本： 7.4.3
 
@@ -43,7 +43,9 @@ INSERT INTO `exp` (`id`, `exp`, `parent`, `sh`) VALUES
 (1, 'HTML, CSS, Javascript, JQuery', 3, 1),
 (2, 'RWD, Bootstrap,', 3, 1),
 (3, 'PHP, MySQL,', 3, 1),
-(4, 'Git - File Version Management', 3, 1);
+(4, 'Git - File Version Management', 3, 1),
+(5, '繪製2D／3D模具設計圖、產品外型設計、曲面、實體3D軟體操作、繪圖工具與軟體操作、電腦基礎動畫設計、專案溝通╱整合管理', 1, 0),
+(6, '使用者介面設計、產品包裝設計、設計印刷基本認知、各式封面設計、色彩應用繪製、素材辨識與處理、視覺設計相關知識、電腦排版設計、電腦繪圖軟體操作、產品介紹及解說銷售', 2, 0);
 
 -- --------------------------------------------------------
 
@@ -100,7 +102,8 @@ CREATE TABLE `msg` (
 --
 
 INSERT INTO `msg` (`id`, `name`, `eng`, `address`, `tel`, `email`, `sh`, `birthday`) VALUES
-(1, '簡志瀚', 'Zidan Chien', '台北市士林區', '0960533', 'ttshpigbrain@gmail.com', 1, '1986-07-02');
+(1, '簡志瀚', 'Zidan Chien', '台北市士林區', '0960533', 'ttshpigbrain@gmail.com', 1, '1986-07-02'),
+(2, 'linsu', '', '新竹市', '0905505', 'linsu@gmail.com', 0, '1988-8-2');
 
 -- --------------------------------------------------------
 
@@ -121,7 +124,8 @@ CREATE TABLE `photo` (
 
 INSERT INTO `photo` (`id`, `file`, `text`, `sh`) VALUES
 (1, 'personal.jpg', '個人頭像', 1),
-(2, 'personal_half.jpg', '個人半身照', 0);
+(2, 'personal_half.jpg', '個人半身照', 0),
+(4, 'test_upload.jpg', '測試', 1);
 
 -- --------------------------------------------------------
 
@@ -135,7 +139,7 @@ CREATE TABLE `user` (
   `pw` varchar(32) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(128) COLLATE utf8mb4_unicode_ci NOT NULL,
   `reg_time` timestamp NULL DEFAULT current_timestamp(),
-  `upd_time` timestamp NULL DEFAULT NULL
+  `upd_time` timestamp NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -143,7 +147,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `acc`, `pw`, `email`, `reg_time`, `upd_time`) VALUES
-(2, 'hanhan', '456456', 'hanhan@gmail.com', '2020-07-08 11:16:50', NULL);
+(2, 'hanhan', '456456', 'hanhan@gmail.com', '2020-07-08 11:16:50', '0000-00-00 00:00:00');
 
 --
 -- 已傾印資料表的索引
@@ -193,7 +197,7 @@ ALTER TABLE `user`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `exp`
 --
 ALTER TABLE `exp`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `intro`
@@ -211,13 +215,13 @@ ALTER TABLE `item`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `msg`
 --
 ALTER TABLE `msg`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `photo`
 --
 ALTER TABLE `photo`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `user`

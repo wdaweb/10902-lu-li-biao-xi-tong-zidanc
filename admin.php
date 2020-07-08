@@ -25,6 +25,15 @@
     
 </head>
 <body>
+<!-- pop up window -->
+<div id="cover" style="display:none; ">
+		<div id="coverr">
+			<!-- <a style="position:absolute; right:3px; top:4px; cursor:pointer; z-index:9999;"	onclick="cl(&#39;#cover&#39;)">╳</a> -->
+			<div id="cvr" style="position:absolute; width:99%; height:100%; margin:auto; z-index:9898;"></div>
+		</div>
+	</div>
+
+
 <!-- 準備include header-->
   <header class="bg-dark fixed-top">
     <nav class="navbar navbar-expand-md navbar-dark container">
@@ -81,13 +90,7 @@
   </header>
 
 
-  <!-- pop up window -->
-  <div id="cover" style="display:none; ">
-		<div id="coverr">
-			<a style="position:absolute; right:3px; top:4px; cursor:pointer; z-index:9999;"	onclick="cl(&#39;#cover&#39;)">╳</a>
-			<div id="cvr" style="position:absolute; width:99%; height:100%; margin:auto; z-index:9898;"></div>
-		</div>
-	</div>
+  
 
     <section class="container pt-5 mt-5">
       <article class="d-flex flex-column justify-content-around">
@@ -105,7 +108,7 @@
               <a href="?do=intro" class="text-white" style="text-decoration:none;">基本簡介</a>
             </div>  
             <div class="btn btn-secondary my-1" style="width:200px;height:2.5rem;font-size:1rem;">
-              <a href="?do=msg" class="text-white" style="text-decoration:none;">獵職條件</a>
+              <a href="?do=msg" class="text-white" style="text-decoration:none;">個人訊息</a>
             </div>  
             <div class="btn btn-secondary my-1" style="width:200px;height:2.5rem;font-size:1rem;">
               <a href="?do=skill" class="text-white" style="text-decoration:none;">工作技能</a>
@@ -129,12 +132,12 @@
             <div class="col-md-8 my-3 mx-3">
                     <?php
                         $do=(!empty($_GET['do']))?$_GET['do']:"photo";
-                        $path="./backend/".$do.".php";
+                        $path="./admin/".$do.".php";
                       
                         if(file_exists($path)){
                           include $path;
                         }else{
-                          include "./backend/photo.php";
+                          include "./admin/photo.php";
                         }
                     ?>
             </div>

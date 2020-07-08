@@ -68,7 +68,7 @@ include_once "base.php";
           <li class="myright-5">
             <ul style="list-style: none;">
               <li class="nav-item">
-                <a class="nav-link" href="?do=login"><i class="fas fa-sign-in-alt mr-2"></i>登入</a>
+                <a class="nav-link" href="./front/login.php"><i class="fas fa-sign-in-alt mr-2"></i>登入</a>
               </li>
             </ul>
           </li>
