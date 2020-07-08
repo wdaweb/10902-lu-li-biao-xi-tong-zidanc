@@ -1,3 +1,7 @@
+<?php
+include_once "base.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -84,7 +88,7 @@
           <div class="card border-secondary mb-3 mt-5 col-12 col-md-3" id="intro">   <!-- style="max-width: XXrem"; -->
               <div class="card-header">個人資料</div>
                 <div class="card-body text-secondary">
-                  <span class=""><img src="./img/personal.jpg" draggable="false" ondragstart="return false"; class="rounded-circle"></span>
+                  <span class=""><img src="./img/<?=find('photo',['sh'=>1])['filename'];?>" draggable="false" ondragstart="return false"; class="rounded-circle"></span>
                     <h5 class="card-title">簡志瀚</h5>
                     <p class="card-text">Taipei City, Taiwan</p>
                     <!-- <div id="jobreq"></div>     -->
