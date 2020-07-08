@@ -1,5 +1,5 @@
 <?php
-include "../common/base.php";
+include "../base.php";
 
 $data['acc']=$_POST['acc'];
 $data['pw']=$_POST['pw'];

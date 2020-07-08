@@ -74,9 +74,9 @@
                             <p>登入帳號：<input type="text" name="acc" id="acc2" class="myform-control" placeholder="請輸入英數字元，勿超過32個字元" size="40px"></p>
                             <p>登入密碼：<input type="password" name="pw" id="pw2" class="myform-control" placeholder="請輸入英數字元，勿超過32個字元" size="40px"></p>
                             <p>再次確認密碼：<input type="password" name="pw2" id="pw3" class="myform-control" placeholder="請輸入同上字元" size="40px"></p>
-                            <p>姓名：<input type="text" name="name" id="name" class="myform-control" size="40px"></p>
+                            <!-- <p>姓名：<input type="text" name="name" id="name" class="myform-control" size="40px"></p> -->
                             <p>電子郵件：<input type="text" name="email" id="email" class="myform-control" placeholder="如「xxx@xxmail.com」" size="40px"></p>
-                            <p>居住縣市：<input type="text" name="residence" id="residence" class="myform-control" placeholder="如「新北市」,「桃園市」" size="40px"></p>
+                            <!-- <p>居住縣市：<input type="text" name="residence" id="residence" class="myform-control" placeholder="如「新北市」,「桃園市」" size="40px"></p> -->
                         </div>
                             
                             <div class="text-center">

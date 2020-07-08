@@ -1,5 +1,5 @@
 <?php
-include "../common/base.php";
+include "../base.php";
 
 $acc=$_POST['acc'];
 
