@@ -101,11 +101,11 @@
     $("#login").on("click",function(){
         let acc = $("#acc").val();
         let pw = $("#pw").val();
-        $.post("./api/chkacc.php",{acc},function(res){
+        $.post("../api/chkacc.php",{acc},function(res){
             if(res==='1'){
-                $.post("./api/chkpw.php",{acc,pw},function(res){
+                $.post("../api/chkpw.php",{acc,pw},function(res){
                     if(res==='1'){
-                        location.href="admin.php";
+                        location.href="../admin.php";
                     }else{
                         alert("帳號或密碼有誤，請重新輸入");
                     }
@@ -114,7 +114,9 @@
                 alert("無此帳號，請輸入正確的帳號");
             }
         }) 
-    })
+        event.preventDefault();
+    }
+    )
 
 
 $("#reg").on("click",function(){
@@ -122,13 +124,14 @@ $("#reg").on("click",function(){
     let pw=$("#pw2").val()
     let pw2=$("#pw3").val()
     let email=$("#email").val()
-    let name=$("#name").val()
-    let residence=$("#residence").val()
+    // let name=$("#name").val()
+    // let residence=$("#residence").val()
     
-if(acc=="" || pw=="" || pw2=="" ||email=="" || residence=""){
+if(acc=="" || pw=="" || pw2=="" ||email==""){
     alert("不可空白")
 }else{
-    $.post("./api/chkacc.php",{acc},function(status){
+    
+    $.post("../api/chkacc.php",{acc},function(status){
         
             if(status=="1"){
                 alert("帳號重複")
@@ -136,10 +139,10 @@ if(acc=="" || pw=="" || pw2=="" ||email=="" || residence=""){
 
                 if(pw==pw2){
                     
-                    $.post("./api/reg.php",{acc,pw,email},function(status){
+                    $.post("../api/reg.php",{acc,pw,email},function(status){
                         if(status=="1"){
                             alert("恭喜，歡迎加入")
-                            location.href="index.php";
+                            location.href="../admin.php";
                         }else{
                             console.log(status)
                         }
@@ -151,9 +154,8 @@ if(acc=="" || pw=="" || pw2=="" ||email=="" || residence=""){
             }
         })
     }
+    event.preventDefault();
 })
-
-
 
 </script>
 

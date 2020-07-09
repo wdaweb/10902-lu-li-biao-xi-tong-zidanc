@@ -23,7 +23,7 @@ function all($table,...$arg){
     }
 
     // echo $sql;
-
+    
     return $pdo->query($sql)->fetchAll();
 }
 

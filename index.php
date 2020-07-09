@@ -88,7 +88,7 @@ include_once "base.php";
           <div class="card border-secondary mb-3 mt-5 col-12 col-md-3" id="intro">   <!-- style="max-width: XXrem"; -->
               <div class="card-header">個人資料</div>
                 <div class="card-body text-secondary">
-                  <span class=""><img src="./img/<?=find('photo',['sh'=>1])['file'];?>" draggable="false" ondragstart="return false"; class="rounded-circle" style="max-width:115px;"></span>
+                  <span class=""><img src="./img/<?=find('photo',['sh'=>1])['file'];?>" draggable="false" ondragstart="return false"; class="rounded-circle" style="width:115px; height:115px;"></span>
                     <h5 class="card-title">簡志瀚</h5>
                     <p class="card-text">Taipei City, Taiwan</p>
                     <!-- <div id="jobreq"></div>     -->
@@ -98,8 +98,23 @@ include_once "base.php";
           <div class="card border-secondary mb-3 mt-5 col-12 col-md-8" id="intro">
               <div class="card-header">基本簡介</div>
                 <div class="card-body text-secondary">
-                    <h5 class="card-title">網頁設計是現在的趨勢，我學習專業網頁設計相關技術</h5>
-                    <p class="card-text">並有5年工業設計師及1.5年專案管理能力，能與客戶直接溝通並提供網頁、工業、商業、平面設計的整合服務，並且具有手繪能力，達到客戶所需質感。</p>
+                  <style>
+                    .div p:nth-child(1){
+                      font-size: 1.6rem;
+                    }
+                  </style>
+  <div class="div">
+<?php
+  $rows=all('intro',['sh'=>1]);
+  foreach($rows as $value){
+?>
+                   
+                    <p class="card-text"><?=$value['intro'];?></p>
+                    
+                    <?php
+}
+?>
+</div>
                 </div>
                 <div class="card-body">
                   <a class="pr-2" href="" style="font-size:2rem; color:rgb(0,255,230);"><i class="fab fa-github"></i></a>

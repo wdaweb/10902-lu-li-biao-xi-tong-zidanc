@@ -32,6 +32,13 @@ foreach ($_POST['id'] as $key => $id) {
                 $data['intro']=$_POST['intro'][$key];
                 $data['sh']=(in_array($id,$_POST['sh']))?1:0;                  
             break;
+            case "exp":
+                $data['jobfn']=$_POST['jobfn'][$key];
+                $data['period']=$_POST['period'][$key];
+                $data['description']=$_POST['description'][$key];
+                $data['id']=$_POST['id'][$key];                  
+                $data['sh']=(in_array($id,$_POST['sh']))?1:0;                  
+            break;
             default:
                 
                 $data['text']=$_POST['text'][$key];

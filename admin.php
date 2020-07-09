@@ -128,7 +128,7 @@
           </aside>  
             
 
-          <aside class="card border-secondary mb-3 mt-5 col-12 col-sm-9 col-md-9">   <!-- style="object-fit:cover"; 圖片等比例充滿版面-->
+          <aside class="card border-secondary mb-3 col-12 col-sm-9 col-md-9">   <!-- style="object-fit:cover"; 圖片等比例充滿版面-->
             <div class="col-md-8 my-3 mx-3">
                     <?php
                         $do=(!empty($_GET['do']))?$_GET['do']:"photo";

@@ -10,13 +10,11 @@
 }
 </style>
 
-<form action="./api/edit.php" method="post">
+<form action="./api/editmsg.php" method="post">
     <div style="float:right;"><input type="button" class="add" onclick="op('#cover','#cvr','./view/<?=$table;?>.php?table=<?=$table;?>')" value="+"></div>
         <table width="100%">
             <tr>
-                <td style="width:20%;text-align:center;">職務名稱</td>
-                <td style="width:20%;text-align:center;">工作期間</td>
-                <td style="width:20%;text-align:center;">職務描述</td>
+                <td style="width:60%;text-align:center;">經歷</td>
                 <td style="width:15%;text-align:center;">顯示</td>
                 <td style="width:15%;text-align:center;">刪除</td>
             </tr>
@@ -25,9 +23,7 @@
                 foreach ($photo as $p) {
             ?>
             <tr>
-                <td style="width:60%;text-align:center;"><input type="text" name="jobfn[]" value="<?=$p['jobfn'];?>" style="width:100%;"></td>
-                <td style="width:60%;text-align:center;"><input type="text" name="period[]" value="<?=$p['period'];?>" style="width:100%;"></td>
-                <td style="width:60%;text-align:center;"><input type="text" name="description[]" value="<?=$p['description'];?>" style="width:100%;"></td>
+                <td style="width:60%;text-align:center;"><input type="text" name="exp[]" value="<?=$p['exp'];?>" style="width:100%;"></td>
                 <td style="width:15%;text-align:center;"><input type="checkbox" name="sh[]" value="<?=$p['id'];?>" <?=($p['sh']==1)?"checked":"";?>></td>
                 <td style="width:15%;text-align:center;"><input type="checkbox" name="del[]" value="<?=$p['id'];?>"></td>
                 <input type="hidden" name="id[]" value="<?=$p['id'];?>">

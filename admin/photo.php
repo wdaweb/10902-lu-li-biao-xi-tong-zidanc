@@ -29,9 +29,7 @@
             <td style="width:20%;text-align:center;"><input type="text" name="text[]" value="<?=$p['text'];?>"></td>
             <td style="width:20%;text-align:center;"><input type="radio" name="sh" value="<?=$p['id'];?>" <?=($p['sh']==1)?"checked":"";?>></td>
             <td style="width:20%;text-align:center;"><input type="checkbox" name="del[]" value="<?=$p['id'];?>"></td>
-            <td style="width:20%;text-align:center;"><input type="button"
-									onclick="op('#cover','#cvr','./view/update_<?=$table;?>.php?id=<?=$p['id'];?>&table=<?=$table;?>')"
-									value="更新圖片"></td>
+            <td style="width:20%;text-align:center;"><input type="button" onclick="op('#cover','#cvr','./view/update_<?=$table;?>.php?id=<?=$p['id'];?>&table=<?=$table;?>')" value="更新圖片"></td>
             <input type="hidden" name="id[]" value="<?=$p['id'];?>">
             <input type="hidden" name="table" value="<?=$table?>">
         </tr>
