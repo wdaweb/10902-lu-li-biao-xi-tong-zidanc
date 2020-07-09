@@ -98,23 +98,24 @@ include_once "base.php";
           <div class="card border-secondary mb-3 mt-5 col-12 col-md-8" id="intro">
               <div class="card-header">基本簡介</div>
                 <div class="card-body text-secondary">
-                  <style>
-                    .div p:nth-child(1){
-                      font-size: 1.6rem;
-                    }
-                  </style>
-  <div class="div">
-<?php
-  $rows=all('intro',['sh'=>1]);
-  foreach($rows as $value){
-?>
+<style>
+  .div p:nth-child(1){
+    font-size: 1.6rem;
+  }
+</style>
+          <div class="div">
+                  <?php
+                    $rows=all('intro',['sh'=>1]);
+                    foreach($rows as $value){
+                  ?>
                    
-                    <p class="card-text"><?=$value['intro'];?></p>
-                    
-                    <?php
-}
-?>
-</div>
+          <p class="card-text"><?=$value['intro'];?></p>
+                  
+                  <?php
+                  }
+                  ?>
+
+          </div>
                 </div>
                 <div class="card-body">
                   <a class="pr-2" href="" style="font-size:2rem; color:rgb(0,255,230);"><i class="fab fa-github"></i></a>
@@ -168,20 +169,39 @@ include_once "base.php";
                 <aside class="d-flex justify-content-between flex-wrap">
                 	<div class="card-body text-secondary col-12 col-md-3">
                 	    <h5 class="card-title">Industrial Design</h5>
-                	    <p class="card-text">繪製2D／3D模具設計圖、產品外型設計、曲面、實體3D軟體操作、繪圖工具與軟體操作、電腦基礎動畫設計、專案溝通╱整合管理</p>
+          <?php
+                $rows=all('skill',['sh'=>1,'type'=>1]);
+                foreach($rows as $value){
+          ?>  
+                      <p class="card-text"><?=$value['skill'];?></p>
+          <?php
+          }
+          ?>
                 	</div>
                   <div class="vline"></div>
                 	<div class="card-body text-secondary col-12 col-md-3">
                 	    <h5 class="card-title">Visual Design/ UI UX</h5>
-                	    <p class="card-text">使用者介面設計、產品包裝設計、設計印刷基本認知、各式封面設計、色彩應用繪製、素材辨識與處理、視覺設計相關知識、電腦排版設計、電腦繪圖軟體操作、產品介紹及解說銷售</p>
+          <?php
+                $rows=all('skill',['sh'=>1,'type'=>2]);
+                foreach($rows as $value){
+          ?>              
+                      <p class="card-text"><?=$value['skill'];?></p>
+          <?php
+          }
+          ?>
                 	</div>
                   <div class="vline"></div>
                 	<div class="card-body text-secondary col-12 col-md-3">
-                	    <h5 class="card-title">Web Design</h5>
-                	    <p class="card-text mb-1">HTML, CSS, Javascript, JQuery</p>
-                      <p class="card-text mb-1">RWD, Bootstrap,</p>
-                      <p class="card-text mb-1">PHP, MySQL,</p>
-                      <p class="card-text mb-1">Git - File Version Management</p>
+                      <h5 class="card-title">Web Design</h5>
+          <?php
+                $rows=all('skill',['sh'=>1,'type'=>3]);
+                foreach($rows as $value){
+          ?>  
+                	    <p class="card-text mb-1"><?=$value['skill'];?></p>
+                      
+          <?php
+          }
+          ?>
                 	</div>
                 </aside>
           </div>
@@ -192,36 +212,23 @@ include_once "base.php";
         <artical class="row justify-content-between">
           <div class="card border-secondary mb-3 mt-3 col-12 col-md-12">   <!-- style="max-width: XXrem"; -->
               <div class="card-header">工作經歷 <small>＆</small> 相關活動</div>
+          
+          <?php
+                $rows=all('exp',['sh'=>1]);
+                foreach($rows as $value){
+          ?>  
+
                 <div class="card-body text-secondary">
                     <div class="d-flex justify-content-between flex-wrap mb-2">
-                    	<span class="font-weight-bold mytitle">(接案)工業設計</span><span class="text-right mt-2">2019/9~2019/11</span>
+                    	<span class="font-weight-bold mytitle"><?=$value['jobfn'];?></span><span class="text-right mt-2"><?=$value['period'];?></span>
                     </div>
-                    <p class="card-text">與上市公司雷虎集團合作，參與電競PUBG(絕地求生)遙控模型車製作。期間參與車體外觀3D塑膠配件的機構設計與建模、資料蒐集分析、三視圖繪製、俄羅斯軍卡3D車殼造型正向建模，並密集與該專案窗口做可行性討論、模型修改、提供基本排模圖等設計諮詢。</p>
+                    <p class="card-text"><?=$value['description'];?></p>
                 </div>
-                <div class="card-body text-secondary">
-                    <div class="d-flex justify-content-between flex-wrap mb-2">
-                    	<span class="font-weight-bold mytitle">工業設計師</span><span class="text-right mt-2">2016/12~2019/9</span>
-                    </div>
-                    <p class="card-text">視覺規劃、圖像化組裝說明書，並提供基礎CMF、噴漆、包裝設計。研調競爭者的定位，做出市場區隔並提供未來趨勢的電繪造型提案，或者根據客戶明確指出的風格趨向作提案設計。正向A級曲面建模、3D逆向工程建模。兼顧車殼及塑膠配件的尺寸搭配，建構車殼模具。並與廠商密切配合後續打樣、問題解決。兼顧製造生產與玩家對產品外觀、造形、色彩、結構、功能及安全性等方面要求條件下，從事大量生產產品之設計及開發。</p>
-                </div>
-                <div class="card-body text-secondary">
-                    <div class="d-flex justify-content-between flex-wrap mb-2">
-                    	<span class="font-weight-bold mytitle">專案管理</span><span class="text-right mt-2">2015/8~2016/11</span>
-                    </div>
-                    <p class="card-text">研究客戶開發方向。整合開發文件、電子規格等。執行新產品開發專案之規劃、執行、設計及發展進度掌控、成本控制及結案程序。協助各部門及廠處推動專案。協調新產品導入量產與上市。進行客戶溝通及訴願處理。</p>
-                </div>
-                <div class="card-body text-secondary">
-                    <div class="d-flex justify-content-between flex-wrap mb-2">
-                    	<span class="font-weight-bold mytitle">立體造型工業設計師</span><span class="text-right mt-2">2013/8~2015/8</span>
-                    </div>
-                    <p class="card-text">研調競爭對手的定位，做出市場區隔的電繪造型提案，或者根據客戶明確指出的風格趨向作提案設計。正向A級曲面建模、3D逆向工程建模。兼顧車殼及塑膠配件的尺寸搭配，建構車殼模具。並與廠商密切配合後續打樣、問題解決。兼顧製造生產與玩家對產品外觀、造形、色彩、結構、功能及安全性等方面要求條件下，從事大量生產產品之設計及開發。</p>
-                </div>
-                <div class="card-body text-secondary">
-                    <div class="d-flex justify-content-between flex-wrap mb-2">
-                    	<span class="font-weight-bold mytitle">視覺傳達設計師</span><span class="text-right mt-2">2012/6~2013/8</span>
-                    </div>
-                    <p class="card-text">從事專業遙控模型車的產品視覺包裝、各式車殼貼紙、內襯結構設計、圖像化組裝說明書等設計工作，以強化商品的視覺形象。</p>
-                </div>
+          
+          <?php
+          }
+          ?>      
+
           </div>
         </artical>
     </section>
@@ -236,44 +243,65 @@ include_once "base.php";
                             
                 <div class="card-deck">
                   <div class="card mb-4" style="min-width:300px;">
+                    <img src="./img/invoice.jpg" draggable="false" ondragstart="return false;" class="card-img-top" style="width:404px; height:316px;">
+                    <div class="card-body">
+                      <h5 class="card-title">發票對獎系統</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+
+                <div class="card-deck">
+                  <div class="card mb-4" style="min-width:300px;">
+                    <img src="./img/ana_clock.jpg" draggable="false" ondragstart="return false;" class="card-img-top" style="width:404px; height:316px;">
+                    <div class="card-body">
+                      <h5 class="card-title">寧靜時計</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+
+                <div class="card-deck">
+                  <div class="card mb-4" style="min-width:300px;">
                     <img src="./img/kyosho_scorpion.jpg" draggable="false" ondragstart="return false;" class="card-img-top">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
+                      <h5 class="card-title">日本傳奇再現</h5>
                       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     </div>
                   </div>
                       
                   <div class="card mb-4" style="min-width:300px;">
-                    <img src="./img/kyosho_scorpion.jpg" draggable="false" ondragstart="return false;" class="card-img-top">
+                    <img src="./img/pubg.jpg" draggable="false" ondragstart="return false;" class="card-img-top">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
+                      <h5 class="card-title">PUBG擬真遙控俄羅斯軍卡</h5>
                       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                     </div>
                   </div>
-                      
+                  
                   <div class="card mb-4" style="min-width:300px;">
-                    <img src="./img/kyosho_scorpion.jpg" draggable="false" ondragstart="return false;" class="card-img-top">
+                    <img src="./img/kraken_stryker.jpg" draggable="false" ondragstart="return false;" class="card-img-top">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
+                      <h5 class="card-title">美國大型遙控領導品牌突擊1/10市場</h5>
+                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                  </div>
+
+                  <div class="card mb-4" style="min-width:300px;">
+                    <img src="./img/manual.jpg" draggable="false" ondragstart="return false;" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">美國大型遙控領導品牌KrakenRC LSE KIT完美符合消費者使用經驗手冊</h5>
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                     </div>
                   </div>
                   
                   <div class="card mb-4" style="min-width:300px;">
-                    <img src="./img/kyosho_scorpion.jpg" draggable="false" ondragstart="return false;" class="card-img-top">
+                    <img src="./img/kyosho_madbug.jpg" draggable="false" ondragstart="return false;" class="card-img-top">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    </div>
-                  </div>
-                      
-                  <div class="card mb-4" style="min-width:300px;">
-                    <img src="./img/kyosho_scorpion.jpg" draggable="false" ondragstart="return false;" class="card-img-top">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
+                      <h5 class="card-title">日本京商與德國福斯首次合作</h5>
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                     </div>
                   </div>
+
+                  
+                     
                       
                 </div>
                 

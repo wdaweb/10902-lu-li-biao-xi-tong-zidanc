@@ -39,6 +39,12 @@ foreach ($_POST['id'] as $key => $id) {
                 $data['id']=$_POST['id'][$key];                  
                 $data['sh']=(in_array($id,$_POST['sh']))?1:0;                  
             break;
+            case "skill":
+                $data['skill']=$_POST['skill'][$key];
+                $data['type']=$_POST['type'][$key];
+                $data['id']=$_POST['id'][$key];                  
+                $data['sh']=(in_array($id,$_POST['sh']))?1:0;                  
+            break;
             default:
                 
                 $data['text']=$_POST['text'][$key];

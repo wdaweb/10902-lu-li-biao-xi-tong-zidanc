@@ -140,12 +140,14 @@ if(acc=="" || pw=="" || pw2=="" ||email==""){
                 if(pw==pw2){
                     
                     $.post("../api/reg.php",{acc,pw,email},function(status){
-                        if(status=="1"){
+                        
+                        // if(status=="1"){
                             alert("恭喜，歡迎加入")
                             location.href="../admin.php";
-                        }else{
-                            console.log(status)
-                        }
+                            
+                        // }else{
+                        //     console.log(status)
+                        // }
                     })
 
                 }else{

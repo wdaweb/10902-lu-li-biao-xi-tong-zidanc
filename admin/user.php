@@ -37,7 +37,9 @@
                 }
             ?>
         </table>
-                <div class="cent">
-                   <input type="submit" value="修改">|<input type="reset" value="重置">
-                </div>
+        
+            <div class="text-center">
+                <input class="btn btn-warning" type="submit" value="修改">　|　<input class="btn btn-outline-secondary" type="reset" value="重置">
+            </div>
+        
     </form>
