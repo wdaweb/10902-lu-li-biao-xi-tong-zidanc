@@ -89,8 +89,8 @@ include_once "base.php";
               <div class="card-header">個人資料</div>
                 <div class="card-body text-secondary">
                   <span class=""><img src="./img/<?=find('photo',['sh'=>1])['file'];?>" draggable="false" ondragstart="return false"; class="rounded-circle" style="width:115px; height:115px;"></span>
-                    <h5 class="card-title">簡志瀚</h5>
-                    <p class="card-text">Taipei City, Taiwan</p>
+                    <h5 class="card-title"><?=find('msg',['sh'=>1])['name'];?></h5>
+                    <p class="card-text"><?=find('msg',['sh'=>1])['address'];?>, Taiwan</p>
                     <!-- <div id="jobreq"></div>     -->
                 </div>
           </div>
@@ -316,7 +316,27 @@ include_once "base.php";
             background-attachment: fixed; -->
     </section>
 
+    <section class="container w-100">
+        <artical class="row justify-content-between">
+          <div class="card border-secondary mb-3 mt-3 col-12 col-md-12">   <!-- style="max-width: XXrem"; -->
+              <div class="card-header">自傳</div>
+          
+          <?php
+                $rows=all('c_resume',['sh'=>1]);
+                foreach($rows as $value){
+          ?>  
 
+                <div class="card-body text-secondary">
+                    <p class="card-text"><?=$value['intro'];?></p>
+                </div>
+          
+          <?php
+          }
+          ?>      
+
+          </div>
+        </artical>
+    </section>
 
     
 <!-- 準備include footer   -->
@@ -333,6 +353,7 @@ include_once "base.php";
     <a href="#" class="btn btn-info bobofixed"><i class="fas fa-arrow-up text-light"></i></a>
   </footer>
 
+  
 <script>
   document.getElementsByTagName('img').ondragstart = function() {
      return false;

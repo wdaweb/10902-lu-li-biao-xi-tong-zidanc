@@ -43,6 +43,11 @@ switch($table){
           $data['type']=$_POST['type'];
       }
     break;
+    case "c_resume":
+      if(!empty($_POST['intro'])){
+          $data["intro"]=$_POST['intro'];
+      }
+    break;
     default:
       
     if(!empty($_POST['text'])){

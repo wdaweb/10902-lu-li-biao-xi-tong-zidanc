@@ -123,6 +123,9 @@
               <a href="?do=item" class="text-white" style="text-decoration:none;">作品集</a>
             </div>  
             <div class="btn btn-secondary my-1" style="width:200px;height:2.5rem;font-size:1rem;">
+              <a href="?do=c_resume" class="text-white" style="text-decoration:none;">自傳</a>
+            </div>  
+            <div class="btn btn-secondary my-1" style="width:200px;height:2.5rem;font-size:1rem;">
               <a href="?do=user" class="text-white" style="text-decoration:none;">帳號管理</a>
             </div>
           </aside>  

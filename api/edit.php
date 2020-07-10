@@ -45,6 +45,10 @@ foreach ($_POST['id'] as $key => $id) {
                 $data['id']=$_POST['id'][$key];                  
                 $data['sh']=(in_array($id,$_POST['sh']))?1:0;                  
             break;
+            case "c_resume":
+                $data['intro']=$_POST['intro'][$key];
+                $data['sh']=(in_array($id,$_POST['sh']))?1:0;                  
+            break;
             default:
                 
                 $data['text']=$_POST['text'][$key];
